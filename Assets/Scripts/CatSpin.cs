@@ -4,7 +4,7 @@ public class CatSpin : MonoBehaviour
 {
     public float spinSpeed;
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.Rotate(0, 0, spinSpeed);
     }
