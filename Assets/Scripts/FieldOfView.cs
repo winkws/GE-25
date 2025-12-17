@@ -22,8 +22,11 @@ public class FieldOfView : MonoBehaviour
 
     public bool detected;
 
+    EnemyAI enemyAI;
+
     private void Start()
     {
+        enemyAI = GetComponent<EnemyAI>();
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
     }
@@ -38,15 +41,17 @@ public class FieldOfView : MonoBehaviour
             {
                 if (!detected)
                 {
-                    Debug.Log("detected");
+                    //Debug.Log("detected");
                 }
 
                 detected = true;
+                enemyAI.playerDetected = true;
             }
         }
         else
         {
             detected = false;
+            enemyAI.playerDetected = false;
             detectionTimer = 0f;
         }
     }

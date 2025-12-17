@@ -357,9 +357,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: holdingItem
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: attacking
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4338245882109526362}
   m_Solo: 0
@@ -605,9 +602,9 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Hands Layer
-    m_StateMachine: {fileID: -805859200243970031}
-    m_Mask: {fileID: 31900000, guid: 071c79f575fab1540ab689ef8bd623c8, type: 2}
+    m_Name: Right Hand Layer
+    m_StateMachine: {fileID: 975504277847545952}
+    m_Mask: {fileID: 31900000, guid: 3dad21a4256a30a4786d9640f04d0318, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -617,14 +614,14 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Right Hand Layer
-    m_StateMachine: {fileID: 975504277847545952}
-    m_Mask: {fileID: 31900000, guid: 3dad21a4256a30a4786d9640f04d0318, type: 2}
+    m_Name: Hands Layer
+    m_StateMachine: {fileID: -805859200243970031}
+    m_Mask: {fileID: 31900000, guid: 071c79f575fab1540ab689ef8bd623c8, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
+    m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
@@ -873,9 +870,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: holdingItem
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: attacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4757158924154189393}

@@ -145,6 +145,8 @@ namespace StarterAssets
 
 		private void CameraRotation()
 		{
+			if(_input.cameraLocked) return;
+
 			// if there is an input
 			if (_input.look.sqrMagnitude >= _threshold)
 			{

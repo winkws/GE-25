@@ -15,6 +15,7 @@ namespace StarterAssets
 		public bool attack;
 		public bool weapon1;
 		public bool weapon2;
+		public bool pause;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -22,6 +23,9 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+
+		[Header("Camera Settings")]
+		public bool cameraLocked = false;
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
@@ -61,6 +65,11 @@ namespace StarterAssets
         {
             Weapon2Input(value.isPressed);
         }
+
+		public void OnPause(InputValue value)
+        {
+            PauseInput(value.isPressed);
+        }
 #endif
 
 
@@ -97,6 +106,11 @@ namespace StarterAssets
         public void Weapon2Input(bool newWeapon2State)
         {
             weapon2 = newWeapon2State;
+        }
+
+		public void PauseInput(bool newPauseState)
+        {
+            pause = newPauseState;
         }
 
         private void OnApplicationFocus(bool hasFocus)

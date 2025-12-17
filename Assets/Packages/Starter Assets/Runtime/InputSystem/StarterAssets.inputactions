@@ -68,6 +68,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "43b65fe1-2445-4e04-89c9-c3bea4f63a6a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -271,12 +280,12 @@
                 },
                 {
                     "name": "",
-                    "id": "320ebbe9-c10c-4374-9a3f-bdd4acf8c167",
-                    "path": "<Mouse>/leftButton",
+                    "id": "b32ca6da-ce29-4d29-96f7-85a604f0d711",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Attack",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
